@@ -1,0 +1,40 @@
+html{
+    background: #121212;
+    width: 100%;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.nav_links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.nav_links li{
+    list-style: none;
+}
+.nav_links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+}

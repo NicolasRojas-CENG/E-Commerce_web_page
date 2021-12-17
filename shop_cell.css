@@ -1,0 +1,610 @@
+/*{
+    margin: 0px;
+    padding: 0px;
+}*/
+html{
+    background: #121212;
+    width: 100%;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.nav_links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.nav_links li{
+    list-style: none;
+}
+.nav_links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+}
+/*.nav_links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5D4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}*/
+.Container{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+aside{
+    display: none;
+}
+/* Corsair */
+
+.Container{
+    position: relative;
+}
+
+.Container .Card_Corsair{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Container .Card_Corsair::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #EBD300;
+    clip-path: circle(150px at 80% 20%);
+}
+
+.Container .Card_Corsair::after{
+    content: 'CORSAIR';
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    font-size: 4em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.Container .Card_Corsair .Img_box{
+    position: absolute;
+    top: 20%;
+    left: -42%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.Container .Card_Corsair:hover .Img_box{
+    top: 0%;
+    left: -42%;
+    transform: translateY(-50%);
+}
+
+.Container .Card_Corsair .Img_box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 270px;
+}
+
+.Container .Card_Corsair .Content_box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.Container .Card_Corsair:hover .Content_box{
+    height: 45%;
+}
+
+.Container .Card_Corsair .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #B8A500;
+    top: -20%;
+}
+
+.Container .Card_Corsair:hover .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #B8A500;
+    top: -10%;
+}
+
+.Container .Card_Corsair .Content_box .Price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20%;
+    padding: 2px, 5px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Container .Card_Corsair:hover .Content_box .Price{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.Container .Card_Corsair .Content_box .Price h3{
+    color: #B8A500;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.Container .Card_Corsair .Content_box a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #6B6420;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #EEDD47;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.Container .Card_Corsair:hover .Content_box a{
+    position: relative;
+    top: -40px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+/* Logitech */
+
+.Container .Card_Logitech{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Container .Card_Logitech::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,184,252,0.99);
+    clip-path: circle(150px at 80% 20%);
+}
+
+.Container .Card_Logitech::after{
+    content: 'LOGITECH';
+    position: absolute;
+    top: 83%;
+    left: 10%;
+    font-size: 3em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.Container .Card_Logitech .Img_box{
+    position: absolute;
+    top: 20%;
+    left: -42%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.Container .Card_Logitech:hover .Img_box{
+    top: 0%;
+    left: -42%;
+    transform: translateY(-50%);
+}
+
+.Container .Card_Logitech .Img_box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 270px;
+}
+
+.Container .Card_Logitech .Content_box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.Container .Card_Logitech:hover .Content_box{
+    height: 45%;
+}
+
+.Container .Card_Logitech .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0081B0;
+    top: -20%;
+}
+
+.Container .Card_Logitech:hover .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0081B0;
+    top: -10%;
+}
+
+.Container .Card_Logitech .Content_box .Price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20%;
+    padding: 2px, 5px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Container .Card_Logitech:hover .Content_box .Price{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.Container .Card_Logitech .Content_box .Price h3{
+    color: #0081B0;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.Container .Card_Logitech .Content_box a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0081B0;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #00B8FC;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.Container .Card_Logitech:hover .Content_box a{
+    position: relative;
+    top: -40px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+/* Razer */
+
+.Container .Card_Razer{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Container .Card_Razer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #44D62C;
+    clip-path: circle(150px at 80% 20%);
+}
+
+.Container .Card_Razer::after{
+    content: 'Razer';
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.Container .Card_Razer .Img_box{
+    position: absolute;
+    top: 20%;
+    left: -42%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.Container .Card_Razer:hover .Img_box{
+    top: 0%;
+    left: -42%;
+    transform: translateY(-50%);
+}
+
+.Container .Card_Razer .Img_box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 270px;
+}
+
+.Container .Card_Razer .Content_box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.Container .Card_Razer:hover .Content_box{
+    height: 45%;
+}
+
+.Container .Card_Razer .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1F8A0F;
+    top: -20%;
+}
+
+.Container .Card_Razer:hover .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1F8A0F;
+    top: -10%;
+}
+
+.Container .Card_Razer .Content_box .Price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20%;
+    padding: 2px, 5px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Container .Card_Razer:hover .Content_box .Price{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.Container .Card_Razer .Content_box .Price h3{
+    color: #1F8A0F;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.Container .Card_Razer .Content_box a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1F8A0F;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #8A0160;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.Container .Card_Razer:hover .Content_box a{
+    position: relative;
+    top: -40px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+/* Roccat */
+
+.Container .Card_Roccat{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Container .Card_Roccat::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #7AF7FF;
+    clip-path: circle(150px at 80% 20%);
+}
+
+.Container .Card_Roccat::after{
+    content: 'Roccat';
+    position: absolute;
+    top: 76%;
+    left: 10%;
+    font-size: 5em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.Container .Card_Roccat .Img_box{
+    position: absolute;
+    top: 20%;
+    left: -42%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.Container .Card_Roccat:hover .Img_box{
+    top: 0%;
+    left: -42%;
+    transform: translateY(-50%);
+}
+
+.Container .Card_Roccat .Img_box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 270px;
+}
+
+.Container .Card_Roccat .Content_box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.Container .Card_Roccat:hover .Content_box{
+    height: 45%;
+}
+
+.Container .Card_Roccat .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5CB9BF;
+    top: -20%;
+}
+
+.Container .Card_Roccat:hover .Content_box h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #5CB9BF;
+    top: -10%;
+}
+
+.Container .Card_Roccat .Content_box .Price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20%;
+    padding: 2px, 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Container .Card_Roccat:hover .Content_box .Price{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.Container .Card_Roccat .Content_box .Price h3{
+    color: #5CB9BF;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.Container .Card_Roccat .Content_box a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1D3B3D;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #6EDEE6;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.Container .Card_Roccat:hover .Content_box a{
+    position: relative;
+    top: -40px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}

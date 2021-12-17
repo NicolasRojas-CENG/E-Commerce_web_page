@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tech Store/G915 Gaming Keyboard</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="logitech_product_style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1 id="top">Tech Store</h1>
+                </div>
+                <ul class="nav_links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../shop.html">Shop</a></li>
+                    <li><a href="../../contact.html">Contact Us</a></li>
+                </ul>
+                <div class="Menu">
+                    <div class="Line1"></div>
+                    <div class="Line2"></div>
+                    <div class="Line3"></div>
+                </div>
+            </nav>
+            <script type="text/javascript" src="navbar.js"></script>
+            <!--<input type="search" placeholder="search"> -->
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <div class="Container">
+                <div class="Card">
+                    <div class="Images">
+                        <div class="Slider">
+                            <img src="../../images/Logitech/keyboard/G915_Logitech.png" alt="">
+                        </div>
+                    </div>
+                    <div class="Info">
+                        <h1>G915 Lightspeed Wireless Mechanical Gaming Keyboard</h1>
+                        <div class="Price">
+                            <h2>Price: $329.99</h2>
+                        </div>
+                        <div class="Specific_info">
+                            <h5 id="Overview" onclick="changeTextO()">Overview</h5>
+                            <h5 id="Wireless" onclick="changeTextW()">Wireless</h5>
+                            <h5 id="Lightsync" onclick="changeTextL()">Lightsync</h5>
+                            <h5 id="Figure" onclick="changeTextF()">Figure</h5>
+                            <h5 id="Battery" onclick="changeTextB()">Battery</h5>
+                        </div>
+                        <div class="Description">
+                            <p id="Text">A breakthrough in design and engineering,
+                                the G915 features LIGHTSPEED pro-grade wireless,
+                                advanced LIGHTSYNC RGB, and new high-performance
+                                low-profile mechanical switches.The G915 is a
+                                sophisticated design of unparalleled beauty,
+                                strength, and performance. Meet G915 LIGHTSPEED
+                                and play the next dimension.</p>
+                            </div>
+                            <div class="Button">
+                                <button type="button" name="button">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <script>
+                    function changeTextO(){
+                        document.getElementById("Text").innerHTML = "A breakthrough in design and engineering, the G915 features LIGHTSPEED pro-grade wireless, advanced LIGHTSYNC RGB, and new high-performance low-profile mechanical switches. The G915 is a sophisticated design of unparalleled beauty, strength, and performance. Meet G915 LIGHTSPEED and play the next dimension.";
+                        document.getElementById("Overview").style.color = "#0081B0";
+                        document.getElementById("Wireless").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Figure").style.color = "gray";
+                        document.getElementById("Battery").style.color = "gray";}
+
+                    function changeTextW(){
+                        document.getElementById("Text").innerHTML = "G915 features pro-grade LIGHTSPEED wireless that achieves super-fast 1 ms performance. It’s the same wireless technology that esports pros all over the world trust in competitions. G915 is also fully functional when plugged in via USB, so you can charge and play simultaneously.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Wireless").style.color = "#0081B0";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Performance").style.color = "gray";
+                        document.getElementById("Battery").style.color = "gray";}
+
+                    function changeTextL(){
+                        document.getElementById("Text").innerHTML = "G915 offers intelligent LIGHTSYNC RGB technology which enables fully customizable per-key lighting across ~ 16.8 M colors. Create your own animations or choose from a selection of preset effects for the most immersive RGB experience. Unify a theme, enhance your gameplay, and extend your gaming setup through your keyboard.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Wireless").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "#0081B0";
+                        document.getElementById("Figure").style.color = "gray";
+                        document.getElementById("Battery").style.color = "gray";}
+
+                    function changeTextF(){
+                        document.getElementById("Text").innerHTML = "G915 is a feat of engineering and design. Meticulously crafted from premium materials, G915 is incredibly refined, impossibly thin, and built with a no-compromises commitment to performance and feature set. Durable, comfortable, and ready for intense gaming sessions, G915 is truly the next generation of gaming mechanical keyboards.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Wireless").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Figure").style.color = "#0081B0";
+                        document.getElementById("Battery").style.color = "gray";}
+
+                    function changeTextB(){
+                        document.getElementById("Text").innerHTML = "Enjoy hours of non-stop game time on a single charge. Battery indicator light on the keyboard and Logitech G HUB will notify you when you’re at 15 percent battery. Fully recharges in just three hours. Keep playing while it’s plugged in and charging via micro USB.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Wireless").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Figure").style.color = "gray";
+                        document.getElementById("Battery").style.color = "#0081B0";}
+                </script>
+            </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <h3><a href="#top">Back to Top.</a></h3>
+
+    </body>
+</html>

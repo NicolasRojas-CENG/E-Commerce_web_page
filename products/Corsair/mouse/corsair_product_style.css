@@ -1,0 +1,237 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+html{
+    background: #121212;
+}
+
+body{
+    font-family: 'IBM Plex Serif', serif;
+    background: #131313;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #B8A500;
+}
+
+main{
+    width: inherit;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+}
+
+.Specific_info h5{
+    cursor: pointer;
+}
+
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav_links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav_links li{
+    list-style: none;
+}
+
+.nav_links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.Menu{
+    display: none;
+    cursor: pointer;
+}
+
+.Menu div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.Container{
+    height: 800px;
+    width: 1000px;
+    background-color: #EBD300;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Card{
+    background-color: #131313;
+    width: 90%;
+    height: 80%;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.Card .Images, .Card .Info{
+    width: 50%;
+}
+
+.Info .Price{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.Info .Specific_info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: gray;
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.Specific_info h5:nth-child(1){
+    color: #B8A500;
+}
+
+.Description{
+    font-size: 18px;
+}
+
+.Button{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Button button{
+    width: 40%;
+    font: inherit;
+    color: #B8A500;
+    border: 4px solid #B8A500;
+    border-radius: 25px;
+    background-color: #131313;
+}
+
+.Button button:nth-child(1) i{
+    margin-right: 10px;
+}
+
+.Button button:hover{
+    color: #131313;
+    background-color: #EBD300;
+}
+
+.Slider{
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.Slider img{
+    width: 90%;
+    margin: auto;
+}
+
+/* For smaller screens. */
+
+@media screen and (max-width:1250px) {
+    .nav_links{
+        width: 40%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav_links li{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav_links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav_links li{
+        opacity: 0;
+    }
+
+    .Menu{
+        display: block;
+    }
+}
+
+/* For the javascript, used to animate the navbar. */
+
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.toggle .Line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .Line2{
+    opacity: 0;
+}
+
+.toggle .Line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

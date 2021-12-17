@@ -1,0 +1,287 @@
+html{
+    background: #121212;
+    width: 100%;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #5D4954;
+}
+.logo{
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+.nav_links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.nav_links li{
+    list-style: none;
+}
+.nav_links a{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5px;
+}
+.Menu{
+    display: none;
+    cursor: pointer;
+}
+
+.Menu div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* For the javascript, used to animate the navbar. */
+
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.toggle .Line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .Line2{
+    opacity: 0;
+}
+
+.toggle .Line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    background: #96B637;
+    width: 100%;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #546915;
+}
+
+section .Container{
+    transform: translateY(-60px);
+    position: relative;
+    min-width: 1000px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1;
+}
+
+section .Container .Contact_info{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: calc(100% - 100px);
+    background: #96B637;
+    z-index: 1;
+    margin-top: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    transform: translateX(30px);
+}
+
+section .Container .Contact_info h2{
+    color: #69241A;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+section .Container .Contact_info .Info{
+    position: relative;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+
+section .Container .Contact_info .Info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0px;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+section .Container .Contact_info .Info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+section .Container .Contact_info .Info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+section .Container .Contact_info .Info li span:nth-child(2){
+    color: #69241A;
+    margin-left: 10px;
+    font-weight: 800;
+    opacity: 0.5;
+}
+
+section .Container .Contact_info li:hover span:nth-child(1) img,
+section .Container .Contact_info li:hover span:nth-child(2){
+    opacity: 1;
+}
+
+section .Container .Contact_info .social{
+    position: relative;
+    display: flex;
+    transform: translateX(-20px);
+}
+
+section .Container .Contact_info .social li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+section .Container .Contact_info .social li a{
+    text-decoration: none;
+}
+
+section .Container .Contact_info .social li a img{
+    filter: invert(1);
+    opacity: 0.5;
+    width: 75px;
+    height: 75px;
+}
+
+section .Container .Contact_info .social li:hover a img{
+    opacity: 1;
+}
+
+section .Container .Contact_form{
+    position: absolute;
+    padding: 70px 50px;
+    background: #FFFFFF;
+    width: 460px;
+    height: 100%;
+    padding-left: 222px;
+    margin-left: 200px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+section .Container .Contact_form h2{
+    color: #0F3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+section .Container .Contact_form .Form_box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: 100%;
+}
+
+section .Container .Contact_form .Form_box .Input_box{
+    position: relative;
+    margin: 0px 0px 35px 0px;
+}
+
+section .Container .Contact_form .Form_box .Input_box.w50{
+    width: 47%;
+}
+
+section .Container .Contact_form .Form_box .Input_box.w100{
+    width: 100%;
+}
+
+section .Container .Contact_form .Form_box .Input_box input,
+section .Container .Contact_form .Form_box .Input_box textarea{
+    width: 100% !important;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    resize: none;
+}
+
+section .Container .Contact_form .Form_box .Input_box textarea{
+    min-height: 120px;
+}
+
+section .Container .Contact_form .Form_box .Input_box span{
+    position: absolute;
+    left: 0px;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+section .Container .Contact_form .Form_box .Input_box input:focus ~ span,
+section .Container .Contact_form .Form_box .Input_box textarea:focus ~ span,
+section .Container .Contact_form .Form_box .Input_box input:valid ~ span,
+section .Container .Contact_form .Form_box .Input_box textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #69241A;
+}
+
+section .Container .Contact_form .Form_box .Input_box input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #96B637;
+    color: #FFF;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .Container .Contact_form .Form_box .Input_box input[type="submit"]:hover{
+    background: #69241A;
+}

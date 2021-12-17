@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tech Store/G910 Gaming Keyboard</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="logitech_product_style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1 id="top">Tech Store</h1>
+                </div>
+                <ul class="nav_links">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../shop.html">Shop</a></li>
+                    <li><a href="../../contact.html">Contact Us</a></li>
+                </ul>
+                <div class="Menu">
+                    <div class="Line1"></div>
+                    <div class="Line2"></div>
+                    <div class="Line3"></div>
+                </div>
+            </nav>
+            <script type="text/javascript" src="navbar.js"></script>
+            <!--<input type="search" placeholder="search"> -->
+        </header>
+
+        <!-- Main Section -->
+        <main>
+            <div class="Container">
+                <div class="Card">
+                    <div class="Images">
+                        <div class="Slider">
+                            <img src="../../images/Logitech/keyboard/G910_Logitech.png" alt="">
+                        </div>
+                    </div>
+                    <div class="Info">
+                        <h1>G910 Mechanical Gaming Keyboard</h1>
+                        <div class="Price">
+                            <h2>Price: $199.99</h2>
+                        </div>
+                        <div class="Specific_info">
+                            <h5 id="Overview" onclick="changeTextO()">Overview</h5>
+                            <h5 id="Romer" onclick="changeTextR()">Romer-G</h5>
+                            <h5 id="Lightsync" onclick="changeTextL()">Lightsync</h5>
+                            <h5 id="Programmable" onclick="changeTextP()">Programmable</h5>
+                            <h5 id="Arx" onclick="changeTextA()">ARX</h5>
+                        </div>
+                        <div class="Description">
+                            <p id="Text">The highest levels performance, engineering,
+                                and design. G910 is fully loaded with programmable
+                                G-keys, LIGHTSYNC RGB, Romer-G Tactile switches,
+                                integrated palmrest and more.</p>
+                            </div>
+                            <div class="Button">
+                                <button type="button" name="button">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <script>
+                    function changeTextO(){
+                        document.getElementById("Text").innerHTML = "The highest levels performance, engineering, and design. G910 is fully loaded with programmable G-keys, LIGHTSYNC RGB, Romer-G Tactile switches, integrated palmrest and more.";
+                        document.getElementById("Overview").style.color = "#0081B0";
+                        document.getElementById("Romer").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Programmable").style.color = "gray";
+                        document.getElementById("Arx").style.color = "gray";}
+
+                    function changeTextR(){
+                        document.getElementById("Text").innerHTML = "The choice of top esports professionals, Romer-G switches deliver quiet, precise mechanical performance with incredible feel and durability. G910 features the tactile variant with discernible actuation feedback.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Romer").style.color = "#0081B0";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Programmable").style.color = "gray";
+                        document.getElementById("Arx").style.color = "gray";}
+
+                    function changeTextL(){
+                        document.getElementById("Text").innerHTML = "LIGHTSYNC RGB lighting reacts to the in-game action of many titles, including highlighting key bindings, automatically. Customize brightness and color to match your style, system and environment. Select from a full spectrum of approximately 16.8 million colors and synchronize lighting animations and effects with your other Logitech G devices. Customize it all quickly and easily using Logitech G HUB.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Romer").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "#0081B0";
+                        document.getElementById("Programmable").style.color = "gray";
+                        document.getElementById("Arx").style.color = "gray";}
+
+                    function changeTextP(){
+                        document.getElementById("Text").innerHTML = "Nine dedicated G-keys can be programmed with custom macros and in-app commands. Execute complex actions, simply and quickly, with a keystroke. G-keys can be assigned per game or app for customizability and convenience. Use Logitech G HUB to easily setup and manage profiles, macros, commands and more.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Romer").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Programmable").style.color = "#0081B0";
+                        document.getElementById("Arx").style.color = "gray";}
+
+                    function changeTextA(){
+                        document.getElementById("Text").innerHTML = "Arx Control app integrates second-screen capability into G910. Use your smartphone or tablet to display in-game info, vital system statistics. Even add in-game controls for supported games. The adjustable smart dock in G910 can hold the majority of iOS® and Android™ mobile devices. Download the Arx app via Apple or Android stores and download G HUB for in-game connectivity.";
+                        document.getElementById("Overview").style.color = "gray";
+                        document.getElementById("Romer").style.color = "gray";
+                        document.getElementById("Lightsync").style.color = "gray";
+                        document.getElementById("Programmable").style.color = "gray";
+                        document.getElementById("Arx").style.color = "#0081B0";}
+                </script>
+            </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <h3><a href="#top">Back to Top.</a></h3>
+
+    </body>
+</html>
